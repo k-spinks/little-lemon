@@ -7,7 +7,6 @@ import About from './About.jsx'
 export default function Main() {
   return (
     <main>
-      Main
       <Hero/>
       <Highlights/>
       <Testimonials/>

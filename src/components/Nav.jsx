@@ -3,15 +3,31 @@ import Logo from '../assets/images/lemonLogo.jpg'
 
 export default function Nav() {
   return (
-    <nav>
-      <img src={Logo} alt='Little Lemon Logo' width={'300'}/>
-      <ul>
-        <li><a href='#Home'>Home</a></li>
-        <li><a href='#About'>About</a></li>
-        <li><a href='#Menu'>Menu</a></li>
-        <li><a href='#Reservations'>Reservations</a></li>
-        <li><a href='#Order-Online'>Order Online</a></li>
-        <li><a href='#Login'>Login</a></li>
+    <nav className='header-nav'>
+      <ul className='header-nav-list'>
+        <li className='header-nav-item'>
+          <a href='#home' className='header-nav-link'>
+            <img src={Logo} alt='Little Lemon Logo' width={'200'} className='header-logo'/>
+          </a>
+        </li>
+        <li className='header-nav-item'>
+          <a href='#Home' className='header-nav-link'>Home</a>
+        </li>
+        <li className='header-nav-item'>
+          <a href='#About' className='header-nav-link'>About</a>
+          </li>
+        <li className='header-nav-item'>
+          <a href='#Menu' className='header-nav-link'>Menu</a>
+          </li>
+        <li className='header-nav-item'>
+          <a href='#Reservations' className='header-nav-link'>Reservations</a>
+          </li>
+        <li className='header-nav-item'>
+          <a href='#Order-Online' className='header-nav-link'>Order Online</a>
+          </li>
+        <li className='header-nav-item'>
+          <a href='#Login' className='header-nav-link'>Login</a>
+        </li>
       </ul>
     </nav>
   )
