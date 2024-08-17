@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 export default function Footer() {
   return (
     <footer>
-      <nav>
+      <nav className='page-container'>
         <div>
            <Link to='/' className='nav-logo'>
               <img src={Logo} alt='Little Lemon Logo' width={'100'}/>
