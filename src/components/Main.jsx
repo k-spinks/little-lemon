@@ -1,16 +1,13 @@
 import React from 'react'
-import Hero from './Hero.jsx'
-import Highlights from './Highlights.jsx'
-import Testimonials from './Testimonials.jsx'
-import About from './About.jsx'
+import {Routes, Route} from 'react-router-dom'
+import Homepage from '../pages/Homepage.jsx'
+import BookingPage from '../pages/BookingPage.jsx'
 
 export default function Main() {
   return (
-    <main>
-      <Hero/>
-      <Highlights/>
-      <Testimonials/>
-      <About/>
-    </main>
+      <Routes>
+        <Route path='/' element={<Homepage/>}/>
+        <Route path='/reservations' element={<BookingPage/>}/>
+      </Routes>
   )
 }
