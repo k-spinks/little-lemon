@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom'
 
 export default function Nav() {
   return (
-    <nav className='header-nav page-container'>
+    <nav className='row container'>
       <div>
         <Link to='/' className='nav-link'>
               <img src={Logo} alt='Little Lemon Logo' width={'200'}/>
         </Link>
       </div>
-      <ul className='nav-list section-title'>
+      <ul className='row col nav-list section-title'>
         <li className='nav-item'>
           <Link to='/' className='nav-link'>Home</Link>
         </li>

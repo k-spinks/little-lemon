@@ -1,9 +1,12 @@
 import React from 'react'
 
+import Reviews from './Reviews'
+
 export default function Testimonials() {
   return (
-    <section className='testimonial-section section'>
-      <h1>TESTIMONIALS</h1>
+    <section className=''>
+      <h2>Testimonials</h2>
+      <Reviews/>
     </section>
   )
 }

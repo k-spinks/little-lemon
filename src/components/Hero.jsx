@@ -6,18 +6,18 @@ export default function Hero(props) {
   const {location, description} = props
   return (
     <section className='hero-section'>
-      <div className="hero-container page-container">
-        <div className='hero-content'>
+      <div className='row container'>
+        <div className='row hero-content'>
           <div>
-            <h1 className='hero-heading display-title'>Little Lemon</h1>
-            <h3 className='hero-location sub-title'>{location}</h3>
+            <h1 className='display-title'>Little Lemon</h1>
+            <h3 className='sub-title'>{location}</h3>
+            <p className='paragraph-text'>{description}</p>
           </div>
-          <p className='hero-description lead-text'>{description}</p>
           <CallToAction text="Reserve a Table"/>
         </div>
-        <div className='image-container'>
-          <img className='splash-img' src={Splash} alt="Man serving food"/>
-        </div>
+          <div className="img-container">
+            <img className='splash-img rounded' src={Splash} alt="Man serving food"/>
+          </div>
       </div>
     </section>
   )
