@@ -3,6 +3,7 @@
   --main-yellow: #F4CE14;
   --main-salmon: #EE9972;
   --secondary-salmon: #FBDABB;
+  --secondary-offWhite: #FDF4EE;
   --secondary-white: #EDEFEE;
   --secondary-grey: #333333;
   --page-width: 90%;
@@ -28,6 +29,10 @@ img {
 
 section {
   margin-top: 3rem;
+}
+
+footer {
+  background-color: var(--main-green);
 }
 
 /* Layout */
@@ -116,6 +121,45 @@ section {
   font-family: var(--secondary-text);
   font-weight: 700;
   font-size: 1rem;
+}
+
+.testimonial-heading-text {
+  font-family: var(--primary-text);
+  font-weight: 500;
+  font-size: 2.25rem;
+}
+
+.testimonial-name-text {
+  font-family: var(--secondary-text);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.testimonial-username-text {
+  color: #6E6F6E;
+}
+
+.testimonial-description-text {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #6E6F6E;
+}
+
+.about-description-text {
+  font-family: var(--secondary-text);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.about-title-text {
+  color: var(--main-yellow);
+}
+
+.footer-heading-text {
+  font-family: var(--secondary-text);
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: var(--main-yellow);
 }
 
 /* ? Nav Styles */
@@ -266,23 +310,105 @@ nav ul {
 
 /* ? Testimonials */
 
-/* ? Desktop Screens */
-@media (min-width:900px) {
-  /*
+.testimonials-section {
+  text-align: center;
+  background-color: var(--secondary-offWhite);
+  padding: 2rem;
+}
+
+.reviews-container {
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+}
+
+.review-card {
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 1px rgba(110, 111, 110, 30%);
+  padding: 2rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  max-width:100%;
+}
+
+.testimonial-reviewer {
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.reviewer-pfp {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.testimonial-name-content {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.testimonial-review-content {
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* ? About us */
+.about-section {
+  margin: 3rem auto;
+}
+
+.about-container {
+  justify-content: space-between;
+}
+
+.about-content * {
+  margin-bottom: 1.5rem;
+}
+
+.about-content {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+}
+
+.about-section img {
+  margin: auto 0;
+  border: 1px solid black;
+}
+
+/* ? Footer */
+.footer-nav {
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 1.5rem 0;
+}
+
+.footer-col {
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 1rem;
+}
+
+.footer-link-text {
+  font-family: var(--secondary-text);
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--secondary-white);
+}
+
+/* ? Tablet Screens */
+@media (min-width: 650px) {
   html {
     font-size: 16px;
   }
-  header nav {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+}
 
-  nav ul {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
-  .nav-item {
-
-  } */
+/* ? Desktop Screens */
+@media (min-width: 1200px) {
+  
 }

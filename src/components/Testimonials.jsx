@@ -4,8 +4,8 @@ import Reviews from './Reviews'
 
 export default function Testimonials() {
   return (
-    <section className=''>
-      <h2>Testimonials</h2>
+    <section className='testimonials-section'>
+      <h2 className='testimonial-heading-text'>Testimonials</h2>
       <Reviews/>
     </section>
   )

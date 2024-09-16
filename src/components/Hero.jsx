@@ -1,9 +1,8 @@
 import React from 'react'
-import Splash from '../assets/images/serving.jpg'
 import CallToAction from './CallToAction.jsx'
 
 export default function Hero(props) {
-  const {location, description} = props
+  const {location, description, splash, reservation} = props
   return (
     <section className='hero-section'>
       <div className='row container'>
@@ -14,11 +13,11 @@ export default function Hero(props) {
               <p className='paragraph-text'>{description}</p>
             </div>
             <div className='hero-btn'>
-              <CallToAction text="Reserve a Table"/>
+            {!reservation && <CallToAction text="Reserve a Table"/>}
             </div>
         </div>
           <div className="img-container">
-            <img className='splash-img rounded' src={Splash} alt="Man serving food"/>
+            <img className='splash-img rounded' src={splash} alt="Man serving food"/>
           </div>
       </div>
     </section>
