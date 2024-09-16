@@ -5,7 +5,7 @@
   --secondary-salmon: #FBDABB;
   --secondary-white: #EDEFEE;
   --secondary-grey: #333333;
-  --page-width: 375px;
+  --page-width: 90%;
   --primary-text: "Markazi Text", serif;
   --secondary-text: "Karla", sans-serif;
 }
@@ -50,27 +50,27 @@ section {
 
 /* ! Typography */
 
-.display-title {
+.display-title-text {
   font-family: var(--primary-text);
   font-size: 4rem;
   font-weight: 500;
 }
 
-.sub-title {
+.sub-title-text {
   font-family: var(--primary-text);
   font-size: 2.5rem;
   font-weight: 400;
 }
 
-.lead-text {
+.lead-text-text {
   font-family: var(--secondary-text);
   font-size: 1.125rem;
   font-weight: 500;
 }
 
-.section-title {
+.section-title-text {
   font-family: var(--secondary-text);
-  font-size: 1.25rem;
+  font-size: 1.6rem;
   font-weight: 800;
 }
 
@@ -80,7 +80,7 @@ section {
   font-weight: 800;
 }
 
-.card-title {
+.card-title-text {
   font-family: var(--secondary-text);
   font-size: 1.125rem;
   font-weight: 700;
@@ -100,7 +100,7 @@ section {
   font-weight: 500;
 }
 
-.specials-heading {
+.specials-heading-text {
   font-family: var(--primary-text);
   font-size: 3.437rem;
   font-weight: 600;
@@ -112,7 +112,13 @@ section {
   font-weight: 600;
 }
 
-/* Nav Styles */
+.specials-order-text {
+  font-family: var(--secondary-text);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* ? Nav Styles */
 
 .nav-list {
   list-style: none;
@@ -123,10 +129,10 @@ section {
   color: var(--secondary-grey);
 }
 
-/* Header Styles */
+/* ? Header Styles */
 header {
   width: 100%;
-  padding: 1rem;
+  padding-top: 1rem;
 }
 
 nav {
@@ -145,7 +151,7 @@ nav ul {
   margin-top: 1.15rem;
 }
 
-/* Hero */
+/* ? Hero */
 .hero-section {
   background-color: #495E47;
   color: var(--secondary-white);
@@ -163,12 +169,12 @@ nav ul {
 .hero-content {
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
-  width: 40%;
+  align-items: flex-start;
+  width: 45%;
 }
 
-.hero-content button {
-  align-self: flex-end;
+.hero-btn {
+  margin-top: .5rem;
 }
 
 .img-container {
@@ -178,42 +184,91 @@ nav ul {
   top: 25px;
 }
 
-/*Call to action button */
+/* ? Call to action button */
 .cta-btn {
   background-color: var(--main-yellow);
   padding: 1.15rem 1.25rem;
-  width: 150px;
+  max-width: 100%;
   border: none;
 }
 
-/* Highlights */
+/* ? Highlights */
 .highlights-section {
   margin-top: 5rem;
-  
 }
 
-.highlights-section div:first-of-type {
+.highlights-content {
   flex-direction: column;
-}
-
-.highlights-heading {
-  border: 3px solid black;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .highlights-heading h2 {
-  border: 3px solid pink;
+  font-size: 1.8rem;
 }
 
-.cta-highlight {
-  border: 3px solid pink;
+.highlights-heading {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
 }
+
+/* ? Specials Section/Card */
+.specials-container {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.specials-card {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.specials-img {
+  align-self: flex-start;
+  object-fit: cover;
+  width: 50%;
+  border-radius: 16px 0 0 16px;
+  border: 1px solid black;
+}
+
+.specials-content-container {
+  background-color: var(--secondary-white);
+  align-self: stretch;
+}
+
+.specials-content {
+  margin-left: .75rem;
+  margin-right: .5rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.specials-price {
+  color: var(--main-salmon);
+}
+
+.specials-heading {
+  justify-content: space-between;
+}
+
+.specials-order {
+  align-items: center;
+}
+
+.specials-card-icon {
+  width: 15px;
+  margin-right: auto;
+  margin-left: .75rem;
+}
+
+/* ? Testimonials */
 
 /* ? Desktop Screens */
 @media (min-width:900px) {
-  /* :root {
-    --page-width: 900px;
-  }
-
+  /*
   html {
     font-size: 16px;
   }

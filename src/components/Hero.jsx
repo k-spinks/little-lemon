@@ -8,12 +8,14 @@ export default function Hero(props) {
     <section className='hero-section'>
       <div className='row container'>
         <div className='row hero-content'>
-          <div>
-            <h1 className='display-title'>Little Lemon</h1>
-            <h3 className='sub-title'>{location}</h3>
-            <p className='paragraph-text'>{description}</p>
-          </div>
-          <CallToAction text="Reserve a Table"/>
+            <div>
+              <h1 className='display-title-text'>Little Lemon</h1>
+              <h3 className='sub-title-text'>{location}</h3>
+              <p className='paragraph-text'>{description}</p>
+            </div>
+            <div className='hero-btn'>
+              <CallToAction text="Reserve a Table"/>
+            </div>
         </div>
           <div className="img-container">
             <img className='splash-img rounded' src={Splash} alt="Man serving food"/>

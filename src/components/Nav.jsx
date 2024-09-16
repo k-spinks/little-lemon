@@ -10,7 +10,7 @@ export default function Nav() {
               <img src={Logo} alt='Little Lemon Logo' width={'200'}/>
         </Link>
       </div>
-      <ul className='row col nav-list section-title'>
+      <ul className='row col nav-list section-title-text'>
         <li className='nav-item'>
           <Link to='/' className='nav-link'>Home</Link>
         </li>

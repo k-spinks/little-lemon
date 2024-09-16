@@ -4,7 +4,7 @@ export default function ReviewCard (props) {
   const {name, pfp, username, review} = props
   return (
     <div>
-      <div>
+      <div key={username}>
         <img src={pfp} alt='Reviewers avatar' />
         <div>
           <h5>{name}</h5>

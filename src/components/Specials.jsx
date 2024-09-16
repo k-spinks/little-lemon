@@ -33,7 +33,7 @@ export default function Specials () {
   );
 
   return (
-    <div className='specials-container'>
+    <div className='specials-container row'>
     {specials}
     </div>
   )

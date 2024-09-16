@@ -31,6 +31,7 @@ export default function Reviews () {
 
   const reviews = reviewsList.map(item =>
     <ReviewCard
+    key={item.username}
     name={item.name}
     pfp={item.pfp}
     username={item.username}
